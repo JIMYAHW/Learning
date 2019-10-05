@@ -90,12 +90,14 @@ def win():
     diagonal_winner = check_diagonals()
 
     if row_winner:
-        return row_winner
+        winner = row_winner
+        return winner
     elif column_winner:
-        return column_winner
+        winner = column_winner
+        return winner
     elif diagonal_winner:
-        return diagonal_winner
-    return winner
+        winner = diagonal_winner1
+        return winner
 
 def tie():
     global gameOn
@@ -130,5 +132,3 @@ def play_game():
         print("Tie.")
 
 play_game()
-
-
